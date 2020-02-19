@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(48, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    border-radius: 1.5em;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+}
+
+.choose img {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    padding: 2em;
+    border-radius: 100%;
+    margin: 5em 3em 4em 3em;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.score-sheet {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+#user-score, #comp-score {
+    font-size: 2em;
+}
+
+#user-score {
+    padding-right: 1.5em;
+}
+
+#comp-score {
+    padding-left: 1.5em;
+}
+
+#user {
+    position: absolute;
+    top: 48px;
+    right: 800px;
+}
+
+#com {
+    position: absolute;
+    top: 48px;
+    left: 800px;
+}
+
+#result p {
+    margin-bottom: 1em;
+}
+
+.replay {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    border-radius: 1.5em;
+    font-size: 1em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #4dcc7d;
+}
+
+.red {
+    background-color:  #fc121b;
+}
+
+.yellow {
+    background-color: rgb(219, 219, 15);
+}

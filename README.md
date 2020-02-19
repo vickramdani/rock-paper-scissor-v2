@@ -1,0 +1,1 @@
+This is the improved version of the previous rock paper scissor game.

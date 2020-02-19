@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <header>
+        <h1>ROCK PAPER SCISSOR</h1>
+    </header>
+
+    <!-- THE GAME SECTION -->
+    <div class="games">
+        <div class="choose" id="rock">
+            <img src="images\rock.png" alt="">
+        </div>
+
+        <div class="choose" id="paper">
+            <img src="images\paper.png" alt="">
+        </div>
+
+        <div class="choose" id="scissor">
+            <img src="images\scissors.png" alt="">
+        </div>
+    </div>
+
+    <!-- THE SCORE SECTION -->
+    <div class="score-sheet">
+        <h3>GET 5 POINT AND YOU ARE THE WINNER!</h3>
+        <div class="player" id="user">
+            <i class="fa fa-user fa-2x"></i>
+        </div>
+        <div class="player" id="com">
+            <i class="fa fa-desktop fa-2x"></i>
+        </div>
+        <span id="user-score">0</span>:<span id="comp-score">0</span>
+    </div>
+
+    <!-- THE RESULT -->
+    <div id="result">
+        <p></p>
+        <h4></h4>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
