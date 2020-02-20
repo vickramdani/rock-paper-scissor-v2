@@ -23,7 +23,7 @@ const winner = (user, comps) => {
     userScore++
     userScore_sec.innerHTML = userScore;
     comScore_sec.innerHTML = computerScore;
-    resultText.innerHTML = `You win! ${user} beats ${comps}`;
+    resultText.innerHTML = `COMPUTER CHOOSE ${comps}, YOU WIN!`;
     resultText.style.color = 'green';
     resultText.style.fontSize = '1.5em';
     document.getElementById(user).querySelector(".choose img").classList.add("green")
@@ -31,7 +31,7 @@ const winner = (user, comps) => {
     if (userScore > computerScore && userScore === 5) {
         userScore = 0;
         computerScore = 0;
-        resultText.innerHTML = "Congratulation, you win the game!!";
+        resultText.innerHTML = "CONGRATULATION, YOU WIN THE GAME!!";
         resultText.style.color = "green";
         resultText.style.fontSize = "1.5em";
         playAgain.innerHTML = "Play again?";
@@ -50,7 +50,7 @@ const loser = (user, comps) => {
     computerScore++
     userScore_sec.innerHTML = userScore;
     comScore_sec.innerHTML = computerScore;
-    resultText.innerHTML = `You lose! ${comps} beats ${user}`;
+    resultText.innerHTML = `COMPUTER CHOOSE ${comps}, YOU LOSE! `;
     resultText.style.color = 'red';
     document.getElementById(user).querySelector(".choose img").classList.add("red")
     setTimeout(function () { document.getElementById(user).querySelector(".choose img").classList.remove("red") }, 500)
@@ -58,7 +58,7 @@ const loser = (user, comps) => {
         userScore = 0;
         computerScore = 0;
 
-        resultText.innerHTML = "Aww, you lose the game!!";
+        resultText.innerHTML = "AWW, YOU LOSE THE GAME!!";
         resultText.style.color = "red";
         resultText.style.fontSize = "1.5em";
         playAgain.innerHTML = "Play again?";
@@ -76,7 +76,7 @@ const loser = (user, comps) => {
 const draw = (user, comps) => {
     userScore_sec.innerHTML = userScore;
     comScore_sec.innerHTML = computerScore;
-    resultText.innerHTML = `It's a draw!`;
+    resultText.innerHTML = `IT'S A DRAW!`;
     resultText.style.color = 'yellow';
     resultText.style.fontSize = '1.5em';
     document.getElementById(user).querySelector(".choose img").classList.add("yellow");
